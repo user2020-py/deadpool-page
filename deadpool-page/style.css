@@ -1,0 +1,157 @@
+/* Core */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background.png);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+}
+
+.container{
+    margin: 120px auto;
+    width: 70%;
+}
+
+/* Header */
+.header{
+    width: 100%;
+}
+
+.navigation-menu{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-items{
+    display: inline-flex;
+    column-gap: 25px;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.menu-items > li{
+    list-style: none;
+    
+}
+
+.menu-items > li a{
+    text-decoration: none;
+    color: #f00;
+    transition-duration: 0.3s;
+}
+
+#deadpool-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#deadpool-img{
+    width: 80px;
+    height: 80px;
+    background-color: #f00;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+/* Title */
+h1{
+    font-size: 100px;
+    margin: 40px 0;
+}
+
+section.title{
+    color: #f00;
+    font-family: sans-serif;
+}
+
+/* About */
+#comic{
+    margin-top: 200px;
+    margin-bottom: 30pxpx;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#comic > .card{
+    position: relative;
+    width: 270px;
+    background-color: #fff;
+}
+
+#comic img{
+    width: 100%;
+}
+
+#comic #text{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#comic #image{
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+}
+
+.footer .footer-img img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.footer .hero{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero > div{
+    margin: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.hero > div img{
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: #f00;
+    border-style: solid;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+/* Hovers */
+/* Navigation bar*/
+nav.navigation-menu ul > li:hover a{
+    text-shadow: 0 0 10px #f00;
+}
+
+/* Footer hero*/
+.hero > div img:hover{
+    transform: scale(1.1);
+}
+
+.card #image{
+    transition-duration: 1s;
+}
+
+.card:hover #image{
+    transform: translateX(-300px);
+}
